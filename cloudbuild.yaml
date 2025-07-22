@@ -20,7 +20,7 @@ steps:
     id: 'Deploy'
     args: ['-n', 'prod', 'apply', '-f', 'prod/deployment.yaml']
     env:
-    - 'CLOUDSDK_COMPUTE_REGION=us-central1-b'
-    - 'CLOUDSDK_CONTAINER_CLUSTER=hello-cluster'
+    - 'CLOUDSDK_COMPUTE_ZONE=us-central1-b'
+    - 'CLOUDSDK_CONTAINER_CLUSTER=cluster-1'
 options:
  logging: CLOUD_LOGGING_ONLY
